@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" id="js-toggle">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Crypting Up</title>
+    <meta name="description" content="Eindopdracht" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <script src="./script/dataHandler.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <main class="c-app">
+      <section class="c-nav">
+        <div class="c-nav--links">
+          <h3 onClick="window.location.reload();">Crypting up</h3>
+        </div>
+        <div class="c-nav--rechts">
+          <div id="js-dot" class="o-dot">
+            <img id="js-dayNight" class="o-toggle" src="/svg/dark.svg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- <div
+        id="Asset"
+        class="js-dropdown--content js-asset c-asset c-dropdown--asset"
+      ></div> -->
+      <section>
+        <div class="c-breadcrumb">
+          <p class="o-breadcrumb">
+            Exchange: <span class="js-exchange"></span>
+          </p>
+        </div>
+      </section>
+
+      <!-- The Modal -->
+      <div id="myModal" class="c-modal">
+        <!-- Modal content -->
+        <div class="c-modal-content" id="modal-content"></div>
+      </div>
+
+      <section class="c-container">
+        <div class="c-row--cards js-row--cards"></div>
+      </section>
+    </main>
+
+    <button onclick="topFunction()" id="js-btn" title="Go to top">Top</button>
+  </body>
+  <script src="./script/app.js"></script>
+</html>
